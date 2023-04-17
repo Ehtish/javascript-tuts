@@ -72,4 +72,15 @@
 
 // task # 7 (find number in array using built-in function and custom function)
 
-findNumber = (a) => {};
+var number = [1, 2, 3, 4, 5];
+var target = 5;
+
+findItem = (number, target) => {
+  for (let i = 0; i < number.length; i++) {
+    if (target === number[i]) {
+      return target;
+      //console.log(target);
+    }
+  }
+};
+console.log(`Target is: ${findItem(number, target)}`);
