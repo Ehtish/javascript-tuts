@@ -72,15 +72,44 @@
 
 // task # 7 (find number in array using built-in function and custom function)
 
-var number = [1, 2, 3, 4, 5];
-var target = 5;
+// var number = [1, 2, 3, 4, 5];
+// var target = 5;
 
-findItem = (number, target) => {
-  for (let i = 0; i < number.length; i++) {
-    if (target === number[i]) {
-      return target;
-      //console.log(target);
-    }
+// findItem = (number, target) => {
+//   for (let i = 0; i < number.length; i++) {
+//     if (target === number[i]) {
+//       return target;
+//       //console.log(target);
+//     }
+//   }
+// };
+// console.log(`Target is: ${findItem(number, target)}`);
+
+var arr = [
+  ["sohaib", "roomi", 1],
+  ["aarij", "sheikh", 2],
+  ["waqar", "ahmed", 3],
+];
+
+var newarr = arr.map((element) => {
+  return {
+    firstName: element[0],
+    lastName: element[1],
+    id: element[2],
+  };
+});
+
+console.log(`Given array : ${arr}`);
+// console.log(`Given array : ${newarr}`);
+console.log("Converted into object are given below");
+console.log(newarr);
+// console.log(newarr);
+var arr2 = [12, 32, 34, 45, 55];
+let even = arr2.map((a) => {
+  if (a % 2 === 0) {
+    return a;
+  } else {
+    return "odd numbers";
   }
-};
-console.log(`Target is: ${findItem(number, target)}`);
+});
+console.log(even);
